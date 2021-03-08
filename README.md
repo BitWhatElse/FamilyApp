@@ -1,2 +1,2 @@
 # FamilyApp
-Blazor App form managing some family tasks
+Blazor App to managing some family tasks
