@@ -1,0 +1,136 @@
+@import '';
+
+/* _content/TheLastTime.Shared/Components/NavMenu.razor.rz.scp.css */
+
+#ididit[b-wf30l6pncf] {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;
+    line-height: 1;
+    padding: 2px;
+}
+
+.navbar[b-wf30l6pncf] {
+    padding: 0.25rem 0.5rem;
+}
+
+/* On screens that are 768px or more, show the sidebar menu and hide the menu toggler  */
+@media (min-width: 768px) {
+
+    #toggle-nav-menu[b-wf30l6pncf] {
+        display: none;
+    }
+
+    /* collapse is a bootstrap class */
+    .sidebar .collapse[b-wf30l6pncf] {
+        display: block !important;
+    }
+}
+/* _content/TheLastTime.Shared/Components/SelectedHabitComponent.razor.rz.scp.css */
+
+/* close is a bootstrap class */
+[b-jc5dghn5xj] .close:focus {
+    outline: none !important;
+}
+
+/* On screens that are 991.98px or less, set the habit details overlay width to 100% */
+@media (max-width: 991.98px) {
+
+    /* habit details overlay */
+    #overlay[b-jc5dghn5xj] {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+}
+/* _content/TheLastTime.Shared/Layouts/MainLayout.razor.rz.scp.css */
+
+.page[b-ukwrv302ht] {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* The flexible items are displayed vertically, as a column */
+}
+
+/* left side, including the top-row */
+.sidebar[b-ukwrv302ht] {
+    z-index: 4;
+}
+
+/* right side, including the top-row */
+.main[b-ukwrv302ht] {
+    flex: 1;
+}
+
+[b-ukwrv302ht] .header {
+    font-size: 1em;
+    line-height: 2.5;
+    padding: 2px;
+}
+
+/* nav menu, header */
+[b-ukwrv302ht] .top-row {
+    display: flex;
+    z-index: 4;
+    position: relative;
+}
+
+/* On screens that are 767.98px or less, hide the top row */
+@media (max-width: 767.98px) {
+    .main[b-ukwrv302ht]  .top-row {
+        display: none;
+    }
+
+    .page[b-ukwrv302ht] {
+        height: 100vh;
+    }
+}
+
+/* On screens that are 768px or more, show the sidebar menu and hide the menu toggler  */
+@media (min-width: 768px) {
+    .page[b-ukwrv302ht] {
+        flex-direction: row; /* The flexible items are displayed horizontally, as a row */
+    }
+
+    .sidebar[b-ukwrv302ht] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .main[b-ukwrv302ht]  .top-row {
+        position: sticky;
+        top: 0;
+    }
+}
+/* _content/TheLastTime.Shared/Pages/Index.razor.rz.scp.css */
+
+/* add habit button */
+[b-pjmjvi87ve] #add-habit {
+    position: fixed;
+    right: calc(50% - 95px);
+    bottom: 30px;
+    padding: 0 !important;
+    width: 54px;
+    height: 54px;
+    z-index: 2;
+}
+
+/* On screens that are 991.98px or less, set the habit details overlay width to 100% */
+@media (max-width: 991.98px) {
+
+    /* main content body */
+    #overlay-parent[b-pjmjvi87ve] {
+        position: relative;
+    }
+
+    [b-pjmjvi87ve] #add-habit {
+        right: 30px;
+    }
+}
