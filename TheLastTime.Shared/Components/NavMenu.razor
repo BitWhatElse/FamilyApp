@@ -1,0 +1,20 @@
+﻿
+<div class="top-row navbar navbar-dark bg-primary">
+    <button id="toggle-nav-menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="fa fa-fw fa-bars"></span>
+    </button>
+
+    <span class="navbar-text" id="ididit">ididit!</span>
+
+    <button class="navbar-toggler" @onclick="ToggleOptions">
+        <span class="fa fa-fw fa-cog"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass">
+    
+    <SettingsComponent />
+
+    @*<OptionsComponent />*@
+    
+</div>
